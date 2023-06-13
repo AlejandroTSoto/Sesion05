@@ -138,7 +138,7 @@
 					<linkXref>true</linkXref>
 					<sourceEncoding>utf-8</sourceEncoding>
 					<minimumTokens>100</minimumTokens>
-					<targetJdk>11</targetJdk>
+					<targetJdk>11.0.15.1</targetJdk>
 					<skipEmptyReport>false</skipEmptyReport>
 					<rulesets>
 						<ruleset>/rulesets/java/braces.xml</ruleset>
