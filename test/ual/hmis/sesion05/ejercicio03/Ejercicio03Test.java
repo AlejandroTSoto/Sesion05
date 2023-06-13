@@ -10,10 +10,11 @@ public class Ejercicio03Test {
 
     @ParameterizedTest
     @CsvSource({"1234, password demasiado corto", //Menos de 5
-        "passw, password demasiado corto", //Igual a 5
+        "passw, ********", //Igual a 5
+        "passww, ********", //Entre 5 y 8
         "password, ********", //Igual a 8
         "securePassword, ************", //Mas de 12 y menos de 40
-        "contraseñaextremadamentelargaparalaprueba, password demasiado largo"})//Mas de 40"
+        "contraseï¿½aextremadamentelargaparalaprueba, password demasiado largo"})//Mas de 40
     
     public void encriptarPasswordTest(String password, String expected) {
         String encriptado = ejercicio03.encriptarPassword(password);
