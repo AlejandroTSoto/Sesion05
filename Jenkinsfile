@@ -3,7 +3,7 @@ pipeline {
 
   tools {
     // Nombre dado a la instalación de Maven en "Tools configuration"
-    maven "maven default
+    maven "maven default"
   }
 
   stages {
