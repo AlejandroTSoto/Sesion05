@@ -1,30 +1,60 @@
 package ual.hmis.sesion05.ejercicio04;
-
+import ual.hmis.sesion05.ejercicio04.Ejercicio04;
 import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.CsvSource;
+import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.MethodSource;
 
-public class Ejercicio04Test {
-	@ParameterizedTest
-	@CsvSource({
-		"1,2,3; 4,5,6; 7,8,9, 1,9; 5,5; 7,3",
-		"10,20,30,40; 50,60,70,80; 90,100,110,120, 10,60,100; 50,70,110",
-		"1; 1, 1; 1,1; 1,1"
-	})
-	public void testObtenerDiagonales(int[][] matriz, int[][] expectedDiagonales) {
-		int[][] actualDiagonales = Ejercicio04.obtenerDiagonales(matriz);
-		assertArrayEquals(expectedDiagonales, actualDiagonales);
-	}
-	
-	@ParameterizedTest
-	@CsvSource({
-		"1.5,2.5,3.5; 4.5,5.5,6.5; 7.5,8.5,9.5; 13.5,16.5,19.5",
-		"10.2,20.4,30.6,40.8; 50.1,60.3,70.5,80.7; 90.9,100.11,110.13,120.15; 151.2,181.4,211.6",
-		"1.0; 1.0, 1.0; 1.0, 1.0"
-	})
-	public void testSumarColumnas(double[][] matriz, double[] expectedSumaColumnas) {
-		double[] actualSumaColumnas = Ejercicio04.sumarColumnas(matriz);
-		assertArrayEquals(expectedSumaColumnas, actualSumaColumnas);
+import java.util.Iterator;
+import java.util.stream.Stream;
+
+public class Ejercicio04Test extends Ejercicio04 {
+	static Stream<Arguments> matrices(){
+		int[][] M1 = {{1,3,2,2,4},{4,2,1,4,5},{1,3,5,5,2},{1,3,5,5,2},{2,3,5,8,0}};
+		int[][] R1 = {{1,2,5,5,0},{4,4,5,3,2}};
+		int[][] M2 = {{1,2,3,4,5},{4,5,6,2,3},{4,5,6,2,3},{1,2,5,5,0},{4,4,5,3,2}};
+		int[][] R2 = {{1,5,6,5,2},{5,2,6,2,4}};
+		int[][] M3 = {{1,2,3,9,7},{4,5,6,0,5},{7,8,9,2,9},{1,5,6,5,2},{5,2,6,2,4}};
+		int[][] R3 = {{1,5,9,5,4},{7,0,9,5,5}};
+		return Stream.of(
+				
+				Arguments.of(M1, R1),
+				Arguments.of(M2, R2),
+				Arguments.of(M3, R3)
+			);
+		}
+	static Stream<Arguments> Suma(){
+		double[][] M1 = {{1,3,2,2,4},{4,2,1,4,5},{1,3,5,5,2},{1,3,5,5,2},{2,3,5,8,0}};
+		double[] R1 = {9,14,18,24,13};
+		double[][] M2 = {{1.3,2,3.3,4,5},{4,5,6,2,3},{4,5,6,2,3},{1,2,5,5,0},{4,4,5,3,2}};
+		double[] R2 = {14.3,18,25.3,16,13};
+		double[][] M3 = {{1,2,3,9,7},{4,5,6,0,5},{7,8,9,2,9},{1,5,6,5,2},{5,2,6,2,4}};
+		double[] R3 = {18,22,30,18,27};
+		return Stream.of(
+				
+				Arguments.of(M1, R1),
+				Arguments.of(M2, R2),
+				Arguments.of(M3, R3)
+			);
+		}
+	@ParameterizedTest//(name = "{0} => Con pass ({1}) devuelve ({2})")
+	@MethodSource("matrices")
+	public void testobtenerDiagonales(int[][] matriz,int[][] salida) {
+		int[][] aux=Ejercicio04.obtenerDiagonales(matriz);
+		 for (int i = 0; i < aux.length; i++) {
+	            for (int j = 0; j < aux[i].length; j++) {
+	            	assertEquals(aux[i][j],salida[i][j]);
+	            }
+		}
+		
+		}
+	@ParameterizedTest//(name = "{0} => Con pass ({1}) devuelve ({2})")
+	@MethodSource("Suma")
+	public void testSumaColumnas(double[][] matriz,double[] salida) {
+		 for (int i = 0; i < matriz.length; i++) {
+	            	assertEquals(Ejercicio04.sumarColumnas(matriz)[i],salida[i]);
+	            
+		
+		 }
 	}
 }
