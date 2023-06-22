@@ -4,7 +4,6 @@ public class Ejercicio04 {
 	public static int[][] obtenerDiagonales(int[][] matriz){
 		int[] diagonal1={0,0,0,0,0};
 		int[] diagonal2={0,0,0,0,0};
-		
 		int aux1=0;
 		int aux2=matriz.length-1;
 		 for (int i = 0; i < matriz.length; i++) {
@@ -15,11 +14,7 @@ public class Ejercicio04 {
 	            aux2--;
 	            aux1++;
 		}
-		
-		 int[][]result = {diagonal1,diagonal2};
-		
-		
-		
+		int[][]result = {diagonal1,diagonal2};
 		return result;
 	}
 	public static double [] sumarColumnas(double [][] matriz) {
@@ -52,7 +47,5 @@ public class Ejercicio04 {
 	     }
 		 double []result={columna0,columna1,columna2,columna3,columna4};
 		return result;
-		
 	}
-
 }

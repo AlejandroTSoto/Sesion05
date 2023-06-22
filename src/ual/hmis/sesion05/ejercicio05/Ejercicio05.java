@@ -1,5 +1,4 @@
 package ual.hmis.sesion05.ejercicio05;
-
 import java.util.ArrayList;
 public class Ejercicio05 {
 	public  ArrayList<Integer> fusionar(ArrayList<Integer> A1 ,ArrayList<Integer> A2) {
@@ -9,7 +8,5 @@ public class Ejercicio05 {
 		}
 		result.sort(null);
 		return result;
-	
-
 	}
 }

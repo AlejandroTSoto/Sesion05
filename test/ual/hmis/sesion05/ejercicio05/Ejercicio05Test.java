@@ -28,18 +28,12 @@ public class Ejercicio05Test extends Ejercicio05 {
 		result12.add(6);
 		result12.add(7);
 		
-		return Stream.of(
-				
-				Arguments.of(M1, M2,result12)
-				
-			);
-		}
+		return Stream.of(Arguments.of(M1, M2,result12));
+	}
 	@ParameterizedTest//(name = "{0} => Con pass ({1}) devuelve ({2})")
 	@MethodSource("Lists")
 	public void testFusionar(ArrayList<Integer> A1,ArrayList<Integer> A2,ArrayList<Integer>result) {
 		Ejercicio05 ej = new Ejercicio05();
 		assertEquals(result, ej.fusionar(A1, A2));
-		
 	}
-	
 }
