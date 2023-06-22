@@ -47,7 +47,14 @@ pipeline {
     }
     stage('Analyze Issues') {
       steps {
-        warningsNG()
+        // Ejecutar el plugin Warnings Next Generation
+        sh "mvn -f pom.xml site"
+      }
+      post {
+        success {
+          // Publicar los resultados del plugin Warnings Next Generation
+          warningsNgParser consoleLogParsers: [[parserName: 'Java Warnings', pattern: '**/target/warnings.xml']], forensicsEnabledForFailure: true
+        }
       }
     }
     stage ('Documentation') {
