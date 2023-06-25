@@ -1,4 +1,20 @@
 -------------------------------------------------------------------------------
 Test set: ual.hmis.sesion05.ejercicio02.Ejercicio02Test
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.096 s - in ual.hmis.sesion05.ejercicio02.Ejercicio02Test
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.163 s - in ual.hmis.sesion05.ejercicio02.Ejercicio02Test
+ual.hmis.sesion05.ejercicio02.Ejercicio02Test.testlogin(String, String, Boolean)[1]  Time elapsed: 0.006 s
+ual.hmis.sesion05.ejercicio02.Ejercicio02Test.testlogin(String, String, Boolean)[2]  Time elapsed: 0.003 s
+ual.hmis.sesion05.ejercicio02.Ejercicio02Test.testlogin(String, String, Boolean)[3]  Time elapsed: 0.002 s
+ual.hmis.sesion05.ejercicio02.Ejercicio02Test.testlogin(String, String, Boolean)[4]  Time elapsed: 0.003 s
+ual.hmis.sesion05.ejercicio02.Ejercicio02Test.testlogin(String, String, Boolean)[5]  Time elapsed: 0.012 s
+ual.hmis.sesion05.ejercicio02.Ejercicio02Test.testlogin(String, String, Boolean)[6]  Time elapsed: 0.003 s
+ual.hmis.sesion05.ejercicio02.Ejercicio02Test.testlogin(String, String, Boolean)[7]  Time elapsed: 0.002 s
+ual.hmis.sesion05.ejercicio02.Ejercicio02Test.testlogin(String, String, Boolean)[8]  Time elapsed: 0.002 s
+ual.hmis.sesion05.ejercicio02.Ejercicio02Test.testlogin(String, String, Boolean)[9]  Time elapsed: 0.001 s
+ual.hmis.sesion05.ejercicio02.Ejercicio02Test.testlogin(String, String, Boolean)[10]  Time elapsed: 0.003 s
+ual.hmis.sesion05.ejercicio02.Ejercicio02Test.testlogin(String, String, Boolean)[11]  Time elapsed: 0.001 s
+ual.hmis.sesion05.ejercicio02.Ejercicio02Test.testlogin(String, String, Boolean)[12]  Time elapsed: 0.001 s
+ual.hmis.sesion05.ejercicio02.Ejercicio02Test.testlogin(String, String, Boolean)[13]  Time elapsed: 0.002 s
+ual.hmis.sesion05.ejercicio02.Ejercicio02Test.testlogin(String, String, Boolean)[14]  Time elapsed: 0.001 s
+ual.hmis.sesion05.ejercicio02.Ejercicio02Test.testlogin(String, String, Boolean)[15]  Time elapsed: 0.002 s
+ual.hmis.sesion05.ejercicio02.Ejercicio02Test.testlogin(String, String, Boolean)[16]  Time elapsed: 0.003 s

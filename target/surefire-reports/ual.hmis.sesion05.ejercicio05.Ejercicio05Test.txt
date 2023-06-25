@@ -1,0 +1,5 @@
+-------------------------------------------------------------------------------
+Test set: ual.hmis.sesion05.ejercicio05.Ejercicio05Test
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in ual.hmis.sesion05.ejercicio05.Ejercicio05Test
+ual.hmis.sesion05.ejercicio05.Ejercicio05Test.testFusionar(ArrayList, ArrayList, ArrayList)[1]  Time elapsed: 0.002 s

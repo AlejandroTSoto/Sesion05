@@ -1,4 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: ual.hmis.sesion05.ejercicio03.Ejercicio03Test
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 s - in ual.hmis.sesion05.ejercicio03.Ejercicio03Test
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.133 s - in ual.hmis.sesion05.ejercicio03.Ejercicio03Test
+ual.hmis.sesion05.ejercicio03.Ejercicio03Test.testcifradop(String, String)[1]  Time elapsed: 0.001 s
+ual.hmis.sesion05.ejercicio03.Ejercicio03Test.testcifradop(String, String)[2]  Time elapsed: 0.005 s
+ual.hmis.sesion05.ejercicio03.Ejercicio03Test.testcifradop(String, String)[3]  Time elapsed: 0.004 s
+ual.hmis.sesion05.ejercicio03.Ejercicio03Test.testcifradop(String, String)[4]  Time elapsed: 0.002 s
+ual.hmis.sesion05.ejercicio03.Ejercicio03Test.testcifradop(String, String)[5]  Time elapsed: 0.014 s
+ual.hmis.sesion05.ejercicio03.Ejercicio03Test.testcifradop(String, String)[6]  Time elapsed: 0.043 s

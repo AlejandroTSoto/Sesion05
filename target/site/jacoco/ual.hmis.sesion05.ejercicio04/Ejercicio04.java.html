@@ -1,6 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Ejercicio04.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Sesion05asm978</a> &gt; <a href="index.source.html" class="el_package">ual.hmis.sesion05.ejercicio04</a> &gt; <span class="el_source">Ejercicio04.java</span></div><h1>Ejercicio04.java</h1><pre class="source lang-java linenums">	package ual.hmis.sesion05.ejercicio04;
 
-<span class="nc" id="L3">public class Ejercicio04 {</span>
-
+<span class="fc" id="L3">public class Ejercicio04 {</span>
+	public static int[][] obtenerDiagonales(int[][] matriz){
+<span class="fc" id="L5">		int[] diagonal1={0,0,0,0,0};</span>
+<span class="fc" id="L6">		int[] diagonal2={0,0,0,0,0};</span>
+<span class="fc" id="L7">		int aux1=0;</span>
+<span class="fc" id="L8">		int aux2=matriz.length-1;</span>
+<span class="fc bfc" id="L9" title="All 2 branches covered.">		 for (int i = 0; i &lt; matriz.length; i++) {</span>
+<span class="fc bfc" id="L10" title="All 2 branches covered.">	            for (int j = 0; j &lt; matriz[i].length; j++) {</span>
+<span class="fc bfc" id="L11" title="All 2 branches covered.">				if(aux1==j) diagonal1[i]=matriz[i][j];</span>
+<span class="fc bfc" id="L12" title="All 2 branches covered.">				if(aux2==j) diagonal2[i]=matriz[i][j];</span>
+			}
+<span class="fc" id="L14">	            aux2--;</span>
+<span class="fc" id="L15">	            aux1++;</span>
+		}
+<span class="fc" id="L17">		int[][]result = {diagonal1,diagonal2};</span>
+<span class="fc" id="L18">		return result;</span>
+	}
+	public static double [] sumarColumnas(double [][] matriz) {
+<span class="fc" id="L21">		double columna0=0;</span>
+<span class="fc" id="L22">		double columna1=0;</span>
+<span class="fc" id="L23">		double columna2=0;</span>
+<span class="fc" id="L24">		double columna3=0;</span>
+<span class="fc" id="L25">		double columna4=0;</span>
+<span class="fc bfc" id="L26" title="All 2 branches covered.">		 for (int i = 0; i &lt; matriz.length; i++) {</span>
+<span class="fc bfc" id="L27" title="All 2 branches covered.">	            for (int j = 0; j &lt; matriz[i].length; j++) {</span>
+<span class="fc bfc" id="L28" title="All 5 branches covered.">	            switch (j) {</span>
+				case 1:
+<span class="fc" id="L30">					columna1=columna1+matriz[i][j];</span>
+<span class="fc" id="L31">					break;</span>
+				case 2:
+<span class="fc" id="L33">					columna2=columna2+matriz[i][j];</span>
+<span class="fc" id="L34">					break;</span>
+				case 3:
+<span class="fc" id="L36">					columna3=columna3+matriz[i][j];</span>
+<span class="fc" id="L37">					break;</span>
+				case 4:
+<span class="fc" id="L39">					columna4=columna4+matriz[i][j];</span>
+<span class="fc" id="L40">					break;</span>
+					
+				default:
+<span class="fc" id="L43">					columna0=columna0+matriz[i][j];</span>
+					break;
+	            }
+	            }
+	     }
+<span class="fc" id="L48">		 double []result={columna0,columna1,columna2,columna3,columna4};</span>
+<span class="fc" id="L49">		return result;</span>
+	}
 }
-</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span></div></body></html>
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

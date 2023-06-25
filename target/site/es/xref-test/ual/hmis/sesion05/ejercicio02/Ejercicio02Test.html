@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+<head><meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>Ejercicio02Test xref</title>
+<link type="text/css" rel="stylesheet" href="../../../../stylesheet.css" />
+</head>
+<body>
+<div id="overview"><a href="../../../../../../testapidocs/ual/hmis/sesion05/ejercicio02/Ejercicio02Test.html">View Javadoc</a></div><pre>
+<a class="jxr_linenumber" name="L1" href="#L1">1</a>   <strong class="jxr_keyword">package</strong> ual.hmis.sesion05.ejercicio02;
+<a class="jxr_linenumber" name="L2" href="#L2">2</a>   
+<a class="jxr_linenumber" name="L3" href="#L3">3</a>   <strong class="jxr_keyword">import</strong> ual.hmis.sesion05.ejercicio02.Ejercicio02;
+<a class="jxr_linenumber" name="L4" href="#L4">4</a>   <strong class="jxr_keyword">import</strong> <strong class="jxr_keyword">static</strong> org.junit.jupiter.api.Assertions.*;
+<a class="jxr_linenumber" name="L5" href="#L5">5</a>   <strong class="jxr_keyword">import</strong> org.junit.jupiter.params.ParameterizedTest;
+<a class="jxr_linenumber" name="L6" href="#L6">6</a>   <strong class="jxr_keyword">import</strong> org.junit.jupiter.params.provider.CsvSource;
+<a class="jxr_linenumber" name="L7" href="#L7">7</a>   <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">class</strong> <a name="Ejercicio02Test" href="../../../../ual/hmis/sesion05/ejercicio02/Ejercicio02Test.html#Ejercicio02Test">Ejercicio02Test</a> <strong class="jxr_keyword">extends</strong> Ejercicio02{
+<a class="jxr_linenumber" name="L8" href="#L8">8</a>   	
+<a class="jxr_linenumber" name="L9" href="#L9">9</a>   	@ParameterizedTest<em class="jxr_comment">//(name = "{0} =&gt; Con pass ({1}) devuelve ({2})")</em>
+<a class="jxr_linenumber" name="L10" href="#L10">10</a>  	@CsvSource({<span class="jxr_string">"null, null,false"</span>,<span class="jxr_string">", ,false"</span>,<span class="jxr_string">",1,false"</span>,<span class="jxr_string">"null,,false"</span>,<span class="jxr_string">"user, null,false"</span>,<span class="jxr_string">"null, pass,false"</span>,
+<a class="jxr_linenumber" name="L11" href="#L11">11</a>  		<span class="jxr_string">"user,passsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss,false"</span>,
+<a class="jxr_linenumber" name="L12" href="#L12">12</a>  		<span class="jxr_string">"usereeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee,pass,false"</span>,
+<a class="jxr_linenumber" name="L13" href="#L13">13</a>  		<span class="jxr_string">"usereeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee,passsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss,false"</span>,
+<a class="jxr_linenumber" name="L14" href="#L14">14</a>  		<span class="jxr_string">"usaer,pass,false"</span>,<span class="jxr_string">"usaer,pasws,false"</span>,<span class="jxr_string">"user,passWord3,false"</span>,<span class="jxr_string">"user,pawss,false"</span>,<span class="jxr_string">"user,PASWS,false"</span>,<span class="jxr_string">"user1,passWord3,false"</span>,<span class="jxr_string">"user,passWord2,true"</span>})
+<a class="jxr_linenumber" name="L15" href="#L15">15</a>  	<strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> testlogin(String st1,String st2,Boolean result) {
+<a class="jxr_linenumber" name="L16" href="#L16">16</a>  	Ejercicio02 ej =<strong class="jxr_keyword">new</strong> Ejercicio02();
+<a class="jxr_linenumber" name="L17" href="#L17">17</a>  	assertEquals(result,ej.login(st1,st2));
+<a class="jxr_linenumber" name="L18" href="#L18">18</a>  	}
+<a class="jxr_linenumber" name="L19" href="#L19">19</a>  }
+</pre>
+<hr/>
+<div id="footer">Copyright &#169; 2023. All rights reserved.</div>
+</body>
+</html>

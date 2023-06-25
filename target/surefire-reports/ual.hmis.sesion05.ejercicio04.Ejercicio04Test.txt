@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: ual.hmis.sesion05.ejercicio04.Ejercicio04Test
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 s - in ual.hmis.sesion05.ejercicio04.Ejercicio04Test
+ual.hmis.sesion05.ejercicio04.Ejercicio04Test.testobtenerDiagonales(int[][], int[][])[1]  Time elapsed: 0.006 s
+ual.hmis.sesion05.ejercicio04.Ejercicio04Test.testobtenerDiagonales(int[][], int[][])[2]  Time elapsed: 0.005 s
+ual.hmis.sesion05.ejercicio04.Ejercicio04Test.testobtenerDiagonales(int[][], int[][])[3]  Time elapsed: 0.001 s
+ual.hmis.sesion05.ejercicio04.Ejercicio04Test.testSumaColumnas(double[][], double[])[1]  Time elapsed: 0.004 s
+ual.hmis.sesion05.ejercicio04.Ejercicio04Test.testSumaColumnas(double[][], double[])[2]  Time elapsed: 0.001 s
+ual.hmis.sesion05.ejercicio04.Ejercicio04Test.testSumaColumnas(double[][], double[])[3]  Time elapsed: 0.002 s

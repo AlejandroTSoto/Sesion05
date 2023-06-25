@@ -1,0 +1,5 @@
+-------------------------------------------------------------------------------
+Test set: ual.hmis.sesion05.ejercicio01.Ejercicio01Test
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.33 s - in ual.hmis.sesion05.ejercicio01.Ejercicio01Test
+ual.hmis.sesion05.ejercicio01.Ejercicio01Test.testTransformar(int, int)[1]  Time elapsed: 0.114 s
